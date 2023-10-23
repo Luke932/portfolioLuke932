@@ -1,5 +1,1 @@
-# Visualize
-
-Questo è un progetto che permette di visualizzare dati in modo interattivo.
-
-[Link al Progetto](visualize/index.html)
+[Visualize Project](https://github.com/Luke932/portfolioLuke932)
