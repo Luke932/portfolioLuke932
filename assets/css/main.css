@@ -1097,6 +1097,11 @@ header #menu-btn:hover{
     margin-top: 1rem;
 }
 
+label {
+    color:white;
+    font-size: 1.6rem;
+}
+
 /*--------------------- 11- Contact Area CSS (End) ---------------------*/
 
 
