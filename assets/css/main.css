@@ -22,12 +22,47 @@
 /*--------------------- 0- Global CSS (Start) ---------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-:root{
+
+
+.light-mode {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .light-mode .box {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .light-mode label {
+    color: #333;
+  }
+  
+  .light-mode .btn {
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+  :root {
     --purple: #3b18d8;
     --black: #000000;
     --white: #F7F5F2;
     --grey: #DFDFDE;
-}
+
+  }
+  
+  .light-mode {
+    --purple: var(--light-purple); /* --purple ora utilizzerà la variabile --light-purple */
+    --black: var(--light-black);
+    --white: var(--light-white);   /* --white ora utilizzerà la variabile --light-white */
+    --grey: var(--light-grey);     /* --grey ora utilizzerà la variabile --light-grey */
+  }
+
+  .light-mode .logo {
+    color: #333;
+  }
+  
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -180,6 +215,33 @@ header.sticky{
     background: rgba(0, 0, 0, 0.8);
 }
 
+.light-mode header.sticky{
+    background: white;
+}
+
+header .logo {
+    display: flex;
+}
+
+header .logo h2 {
+    margin-right: 1rem;
+}
+
+header .logo button{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .logo button:hover{
+    background-color: #555;
+}
+
 header .logo h2{
     font-size: 2.5rem;
     font-weight: 900;
@@ -197,6 +259,12 @@ header .navbar a{
 header .navbar a:hover,
 header .navbar a.active{
     color: var(--purple);
+}
+
+
+.light-mode header .navbar a:hover,
+.light-mode header .navbar a.active{
+    color: #3b18d8 !important;
 }
 
 header #menu-btn{
@@ -334,6 +402,10 @@ header #menu-btn:hover{
     border: 1rem solid var(--purple);
 }
 
+.light-mode .about .image img{
+    border: 1rem solid #333 !important;
+}
+
 .about .content{
     -webkit-box-flex: 1;
     -ms-flex: 1 1 55rem;
@@ -428,6 +500,15 @@ header #menu-btn:hover{
     color: var(--white);
 }
 
+.light-mode .counting .box h1{
+    color: white !important;
+}
+
+.light-mode .counting .box h3{
+    font-size: 1.8rem;
+    color: white !important;
+}
+
 .skill-container{
     padding: 2rem 0;
 }
@@ -472,10 +553,18 @@ header #menu-btn:hover{
     border-radius: 50rem;
 }
 
+.light-mode .skill-item .box .progress-bar{
+    background-color: white !important;
+}
+
  .skill-item .box .progress-bar span{
     display:block;
     height:100%;
     background: var(--purple);
+}
+
+.light-mode .skill-item .box .progress-bar span{
+    background: #333 !important;
 }
 
  .skill-item.item1 .box:nth-child(1) .progress-bar span{
@@ -546,6 +635,10 @@ header #menu-btn:hover{
     margin-left: 2rem;
 }
 
+.light-mode .experience-item{
+    border-left: 0.2rem solid #333 !important;
+}
+
 .experience-item i{
     position: absolute;
     top: 0; 
@@ -559,6 +652,12 @@ header #menu-btn:hover{
     color:var(--white);
     background:var(--purple);
 }
+
+.light-mode .experience-item i{
+    color: #333 !important;
+    background: white !important;
+}
+
 
 .experience-item .content{
     border-radius: 0.5rem;
@@ -574,6 +673,10 @@ header #menu-btn:hover{
     border-radius: 50rem;
 }
 
+.light-mode .experience-item span{
+    color: white !important;
+}
+
 .experience-item h3{
     font-size: 2.5rem;
     color: var(--white);
@@ -585,6 +688,7 @@ header #menu-btn:hover{
     font-size: 1.6rem;
     line-height: 2.5rem;
 }
+
 
 /*--------------------- 6- Qualification Area CSS (End) ---------------------*/
 
@@ -929,6 +1033,10 @@ header #menu-btn:hover{
 
 .blog-item .content{
     padding: 2rem 1rem;
+}
+
+.light-mode .blog-item .content{
+    color: white !important;
 }
 
 .blog-item .content .intro{

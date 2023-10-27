@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light-mode" lang="en">
 
 <head>
 
@@ -40,6 +40,10 @@
           margin: 0.5rem 0;
           background-color: #222;
           outline: none;
+        }
+
+        .light-mode .contact-form{
+            color: white !important;
         }
       
         .contact-form .box:focus {
@@ -86,10 +90,11 @@
         <!-- Logo -->
         <a class="logo" href="#home">
             <h2> Luca </h2>
+            <button id="toggle-mode">Cambia Modalità</button>
             <!-- <img src="assets/images/logo.png" alt="logo" /> -->
         </a>
         <!-- Logo End -->
-
+        
         <!-- Navbar -->
         <nav class="navbar">
             <a href="#home">home</a>
@@ -563,7 +568,7 @@
                             <h5><i class="fas fa-user"></i><span>by Luke</span></h5>
                         </div>
                         <a class="main-heading" href="https://luke932.github.io/Spotify-Clone/">Spotify Clone</a>
-                        <p>Questo è un semplice clone di Spotify creato utilizzando HTML, CSS, Bootstrap e JavaScript.
+                        <p>Questo è clone di Spotify creato utilizzando HTML, CSS, Bootstrap e JavaScript. L'obiettivo è ricreare l'esperienza di Spotify in modo piacevole.
                         </p>
                         <a href="https://github.com/Luke932/Spotify-Clone" class="btn">read more <i
                                 class="fas fa-arrow-right"></i></a>

@@ -33,3 +33,8 @@ $(document).ready(function(){
 
 });
 
+const toggleModeButton = document.getElementById('toggle-mode');
+
+toggleModeButton.addEventListener('click', function() {
+  document.documentElement.classList.toggle('light-mode');
+});
