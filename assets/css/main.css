@@ -134,6 +134,19 @@ section{
     margin-bottom: 2rem;
 }
 
+.chisono{
+    display: flex;
+    color:  #3b18d8;
+}
+
+.chisono a{
+    color:  #3b18d8;
+}
+
+.light-mode .chisono a{
+    color: white;
+}
+
 .heading h2{
     text-align: center;
     padding-bottom: 2rem;
@@ -236,6 +249,7 @@ header .logo button{
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: 0.5rem;
 }
 
 header .logo button:hover{
@@ -392,6 +406,10 @@ header #menu-btn:hover{
     padding: 2rem 0;
 }
 
+.display{
+    display: flex;
+}
+
 .about .image{
     width: 32rem;
     text-align: center;
@@ -513,6 +531,24 @@ header #menu-btn:hover{
     padding: 2rem 0;
 }
 
+.skill-container .display{
+    justify-content: center;
+}
+
+.skill-container .display h2:nth-child(2){
+    color: white;
+    border-bottom: 0.2rem solid var(--purple);
+    padding-bottom: 0;
+    height: 55px;
+}
+
+.light-mode .skill-container .display h2:nth-child(2){
+    color: #333;
+    border-bottom: 0.2rem solid var(--purple);
+    padding-bottom: 0;
+    height: 55px;
+}
+
 .skills{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -520,6 +556,8 @@ header #menu-btn:hover{
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
+
+
 
 .skill-item{
     -webkit-box-flex: 1;
@@ -619,6 +657,24 @@ header #menu-btn:hover{
     gap: 4rem;
 }
 
+.qualification .display {
+    justify-content: center;
+}
+
+.qualification .display h2:nth-child(2){
+    color: white;
+    border-bottom: 0.2rem solid var(--purple);
+    padding-bottom: 0;
+    height: 55px;
+}
+
+.light-mode .qualification .display h2:nth-child(2){
+    color: #333;
+    border-bottom: 0.2rem solid var(--purple);
+    padding-bottom: 0;
+    height: 55px;
+}
+
 .education, .experience{
     -webkit-box-flex: 1;
     -ms-flex: 1 1 40rem;
@@ -709,6 +765,25 @@ header #menu-btn:hover{
     flex-wrap: wrap;
     gap: 1.5rem;
 }
+
+.service .display {
+    justify-content: center;
+}
+
+.service .display h2:nth-child(2){
+    color: white;
+    border-bottom: 0.2rem solid var(--purple);
+    padding-bottom: 0;
+    height: 55px;
+}
+
+.light-mode .service .display h2:nth-child(2){
+    color: #333;
+    border-bottom: 0.2rem solid var(--purple);
+    padding-bottom: 0;
+    height: 55px;
+}
+
 
 .service-item{
     -webkit-box-flex: 1;
@@ -1008,6 +1083,36 @@ header #menu-btn:hover{
     overflow: hidden;
 }
 
+.blog .netflix a{
+    color: #3b18d8 !important;
+}
+
+.light-mode .blog .netflix a{
+    color: white !important;
+}
+
+.blog .netflix{
+    width: 30%;
+}
+
+.blog .display{
+    justify-content: center;
+}
+
+.blog .display h2:nth-child(2){
+    color: white;
+    border-bottom: 0.2rem solid var(--purple);
+    padding-bottom: 0;
+    height: 55px;
+}
+
+.light-mode .blog .display h2:nth-child(2){
+    color: #333;
+    border-bottom: 0.2rem solid var(--purple);
+    padding-bottom: 0;
+    height: 55px;
+}
+
 .blog-item{
     background-color: #222;
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -1090,6 +1195,24 @@ header #menu-btn:hover{
     color: var(--purple);
     border-radius: 0.5rem;
     padding-left: 1rem;
+}
+
+.contact .display{
+    justify-content: center;
+}
+
+.contact .display h2:nth-child(2){
+    color: white;
+    border-bottom: 0.2rem solid var(--purple);
+    padding-bottom: 0;
+    height: 55px;
+}
+
+.light-mode .contact .display h2:nth-child(2){
+    color: #333;
+    border-bottom: 0.2rem solid var(--purple);
+    padding-bottom: 0;
+    height: 55px;
 }
 
 .contact .box-container{
