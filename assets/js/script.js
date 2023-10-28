@@ -1,23 +1,23 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
   $('.scroll-top').hide();
 
   /*--------------- Navbar Toggler ---------------*/
-  $('#menu-btn').click(function(){
+  $('#menu-btn').click(function () {
     $(this).toggleClass('fa-times');
     $('.navbar').toggleClass('active');
   });
 
   /*--------------- Scroll-Top ---------------*/
-  $(window).on('scroll',function(){
-    
+  $(window).on('scroll', function () {
+
     $('#menu-btn').removeClass('fa-times');
     $('.navbar').removeClass('active');
 
     // STICKY HEADER
-    if($(window).scrollTop() > 0){
+    if ($(window).scrollTop() > 0) {
       $(".header").addClass("sticky");
-    }else{
+    } else {
       $(".header").removeClass("sticky");
     }
 
@@ -33,18 +33,18 @@ $(document).ready(function(){
 
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const toggleModeButton = document.getElementById('toggle-mode');
 
-  toggleModeButton.addEventListener('click', function() {
+  toggleModeButton.addEventListener('click', function () {
     document.documentElement.classList.toggle('light-mode');
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const toggleLanguageButton = document.getElementById('toggle-language');
 
-  toggleLanguageButton.addEventListener('click', function() {
+  toggleLanguageButton.addEventListener('click', function () {
     const translatableElements = document.querySelectorAll('.translatable');
 
     translatableElements.forEach(element => {
@@ -165,10 +165,10 @@ document.addEventListener('DOMContentLoaded', function() {
         element.innerText = currentText.replace("months of experience", 'mesi di esperienza');
       }
 
-      if (currentText.includes('progetti completati')) {
-        element.innerText = currentText.replace('progetti completati', "projects completed");
-      } else if (currentText.includes("projects completed")) {
-        element.innerText = currentText.replace("projects completed", 'progetti completati');
+      if (currentText.includes('prodotti terminati')) {
+        element.innerText = currentText.replace('prodotti terminati', "products finished");
+      } else if (currentText.includes("products finished")) {
+        element.innerText = currentText.replace("products finished", 'prodotti terminati');
       }
 
       if (currentText.includes('Le mie')) {
@@ -195,16 +195,16 @@ document.addEventListener('DOMContentLoaded', function() {
         element.innerText = currentText.replace("Full-Stack Developer", 'Full-Stack Developer');
       }
 
-      if (currentText.includes('Certificato come Full-Stack Developer da Epicode, ho acquisito competenze sia nel front-end (HTML, CSS, JavaScript, TypeScript, Angular) che nel back-end (Java, Spring Boot, Spring Security, PostgreSQL). Esperienza nella gestione di progetti di sviluppo in team e nella collaborazione con altri sviluppatori.')) {
-        element.innerText = currentText.replace('Certificato come Full-Stack Developer da Epicode, ho acquisito competenze sia nel front-end (HTML, CSS, JavaScript, TypeScript, Angular) che nel back-end (Java, Spring Boot, Spring Security, PostgreSQL). Esperienza nella gestione di progetti di sviluppo in team e nella collaborazione con altri sviluppatori.', "Certified as a Full-Stack Developer by Epicode, I have gained proficiency in both front-end (HTML, CSS, JavaScript, TypeScript, Angular) and back-end (Java, Spring Boot, Spring Security, PostgreSQL) technologies. I have experience in project management within a team and collaboration with other developers.");
-      } else if (currentText.includes("Certified as a Full-Stack Developer by Epicode, I have gained proficiency in both front-end (HTML, CSS, JavaScript, TypeScript, Angular) and back-end (Java, Spring Boot, Spring Security, PostgreSQL) technologies. I have experience in project management within a team and collaboration with other developers.")) {
-        element.innerText = currentText.replace("Certified as a Full-Stack Developer by Epicode, I have gained proficiency in both front-end (HTML, CSS, JavaScript, TypeScript, Angular) and back-end (Java, Spring Boot, Spring Security, PostgreSQL) technologies. I have experience in project management within a team and collaboration with other developers.", 'Certificato come Full-Stack Developer da Epicode, ho acquisito competenze sia nel front-end (HTML, CSS, JavaScript, TypeScript, Angular) che nel back-end (Java, Spring Boot, Spring Security, PostgreSQL). Esperienza nella gestione di progetti di sviluppo in team e nella collaborazione con altri sviluppatori.');
+      if (currentText.includes('Concluso un corso intensivo di oltre 1000 ore presso Epicode, ottenendo competenze avanzate nel campo dello sviluppo web e della programmazione.')) {
+        element.innerText = currentText.replace('Concluso un corso intensivo di oltre 1000 ore presso Epicode, ottenendo competenze avanzate nel campo dello sviluppo web e della programmazione.', "Completed an intensive course of over 1000 hours at Epicode, acquiring advanced skills in web development and programming.");
+      } else if (currentText.includes("Completed an intensive course of over 1000 hours at Epicode, acquiring advanced skills in web development and programming.")) {
+        element.innerText = currentText.replace("Completed an intensive course of over 1000 hours at Epicode, acquiring advanced skills in web development and programming.", 'Concluso un corso intensivo di oltre 1000 ore presso Epicode, ottenendo competenze avanzate nel campo dello sviluppo web e della programmazione.');
       }
 
-      if (currentText.includes('Diploma in "Tecnico dei servizi turistici"')) {
-        element.innerText = currentText.replace('Diploma in "Tecnico dei servizi turistici"', "BTECs in Tourism Services Technician");
+      if (currentText.includes('Diploma in ambito turistico')) {
+        element.innerText = currentText.replace('Diploma in ambito turistico', "BTECs in Tourism Services Technician");
       } else if (currentText.includes('BTECs in Tourism Services Technician"')) {
-        element.innerText = currentText.replace('BTECs in Tourism Services Technician"', 'Diploma in "Tecnico dei servizi turistici"');
+        element.innerText = currentText.replace('BTECs in Tourism Services Technician"', 'Diploma in ambito turistico');
       }
 
       if (currentText.includes("Certificato come Tecnico dei Servizi Turistici dall'Istituto Alberghiero 'Virgilio Titone'. Competenze acquisite in organizzazione turistica, gestione di strutture ricettive e eventi correlati. Esperienza pratica significativa nel settore.")) {
@@ -219,10 +219,10 @@ document.addEventListener('DOMContentLoaded', function() {
         element.innerText = currentText.replace('Store Manager', 'Responsabile Punto Vendita');
       }
 
-      if (currentText.includes("Guidato da Basone Srl, ho supervisionato le operazioni quotidiane del punto vendita di termoidraulica all'ingrosso. Gestendo le vendite, coordinando il personale e garantendo un servizio clienti di alta qualità, ho contribuito al successo e alla crescita del negozio.")) {
-        element.innerText = currentText.replace("Guidato da Basone Srl, ho supervisionato le operazioni quotidiane del punto vendita di termoidraulica all'ingrosso. Gestendo le vendite, coordinando il personale e garantendo un servizio clienti di alta qualità, ho contribuito al successo e alla crescita del negozio." , "Led by Basone Srl, I supervised the daily operations of the wholesale plumbing and heating store. By managing sales, coordinating staff, and ensuring high-quality customer service, I contributed to the success and growth of the store.");
-      } else if (currentText.includes("Led by Basone Srl, I supervised the daily operations of the wholesale plumbing and heating store. By managing sales, coordinating staff, and ensuring high-quality customer service, I contributed to the success and growth of the store.")) {
-        element.innerText = currentText.replace("Led by Basone Srl, I supervised the daily operations of the wholesale plumbing and heating store. By managing sales, coordinating staff, and ensuring high-quality customer service, I contributed to the success and growth of the store.", "Guidato da Basone Srl, ho supervisionato le operazioni quotidiane del punto vendita di termoidraulica all'ingrosso. Gestendo le vendite, coordinando il personale e garantendo un servizio clienti di alta qualità, ho contribuito al successo e alla crescita del negozio.");
+      if (currentText.includes("Supervisionato operazioni quotidiane e gestito vendite e personale presso il punto vendita di termoidraulica all'ingrosso di Basone Srl, contribuendo al successo e alla crescita del negozio.")) {
+        element.innerText = currentText.replace("Supervisionato operazioni quotidiane e gestito vendite e personale presso il punto vendita di termoidraulica all'ingrosso di Basone Srl, contribuendo al successo e alla crescita del negozio.", "Supervised daily operations and managed sales and staff at Basone Srl's wholesale plumbing and heating store, contributing to the success and growth of the business.");
+      } else if (currentText.includes("Supervised daily operations and managed sales and staff at Basone Srl's wholesale plumbing and heating store, contributing to the success and growth of the business.")) {
+        element.innerText = currentText.replace("Supervised daily operations and managed sales and staff at Basone Srl's wholesale plumbing and heating store, contributing to the success and growth of the business.", "Supervisionato operazioni quotidiane e gestito vendite e personale presso il punto vendita di termoidraulica all'ingrosso di Basone Srl, contribuendo al successo e alla crescita del negozio.");
       }
 
       if (currentText.includes('Ruoli nella ristorazione')) {
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       if (currentText.includes("Ottimizzazione & gestione dei dati per garantire prestazioni eccellenti")) {
-        element.innerText = currentText.replace("Ottimizzazione & gestione dei dati per garantire prestazioni eccellenti","Data optimization & management for ensuring excellent performance");
+        element.innerText = currentText.replace("Ottimizzazione & gestione dei dati per garantire prestazioni eccellenti", "Data optimization & management for ensuring excellent performance");
       } else if (currentText.includes('Data optimization & management for ensuring excellent performance')) {
         element.innerText = currentText.replace('Data optimization & management for ensuring excellent performance', "Ottimizzazione & gestione dei dati per garantire prestazioni eccellenti");
       }
@@ -292,157 +292,157 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       if (currentText.includes("Protezione dei dati & gestione dell'accesso.")) {
-        element.innerText = currentText.replace("Protezione dei dati & gestione dell'accesso.","Data protection & access management");
+        element.innerText = currentText.replace("Protezione dei dati & gestione dell'accesso.", "Data protection & access management");
       } else if (currentText.includes('Data protection & access management')) {
         element.innerText = currentText.replace('Data protection & access management', "Protezione dei dati & gestione dell'accesso.");
       }
 
       if (currentText.includes("Applicazioni Mobili")) {
-        element.innerText = currentText.replace("Applicazioni Mobili","App Mobile");
+        element.innerText = currentText.replace("Applicazioni Mobili", "App Mobile");
       } else if (currentText.includes('App Mobile')) {
         element.innerText = currentText.replace('App Mobile', "Applicazioni Mobili");
       }
 
       if (currentText.includes("Sviluppo di applicazioni mobili Multi-Piattaforma")) {
-        element.innerText = currentText.replace("Sviluppo di applicazioni mobili Multi-Piattaforma","Cross-Platform mobile app development");
+        element.innerText = currentText.replace("Sviluppo di applicazioni mobili Multi-Piattaforma", "Cross-Platform mobile app development");
       } else if (currentText.includes('Cross-Platform mobile app development')) {
         element.innerText = currentText.replace('Cross-Platform mobile app development', "Sviluppo di applicazioni mobili Multi-Piattaforma");
       }
 
       if (currentText.includes("progetti")) {
-        element.innerText = currentText.replace("progetti","projects");
+        element.innerText = currentText.replace("progetti", "projects");
       } else if (currentText.includes('projects')) {
         element.innerText = currentText.replace('projects', "progetti");
       }
 
       if (currentText.includes("giugno")) {
-        element.innerText = currentText.replace("giugno","june");
+        element.innerText = currentText.replace("giugno", "june");
       } else if (currentText.includes('june')) {
         element.innerText = currentText.replace('june', "giugno");
       }
 
       if (currentText.includes("da Luca")) {
-        element.innerText = currentText.replace("da Luca","by Luke");
+        element.innerText = currentText.replace("da Luca", "by Luke");
       } else if (currentText.includes('by Luke')) {
         element.innerText = currentText.replace('by Luke', "da Luca");
       }
 
       if (currentText.includes("Clone di Netflix")) {
-        element.innerText = currentText.replace("Clone di Netflix","Netflix Clone");
+        element.innerText = currentText.replace("Clone di Netflix", "Netflix Clone");
       } else if (currentText.includes('Netflix Clone')) {
         element.innerText = currentText.replace('Netflix Clone', "Clone di Netflix");
       }
 
       if (currentText.includes("Questo è un grandioso progetto fatto in Angular con l'ausilio di Bootstrap e JsonServer e replica l'interfaccia e alcune funzionalità di Netflix.")) {
-        element.innerText = currentText.replace("Questo è un grandioso progetto fatto in Angular con l'ausilio di Bootstrap e JsonServer e replica l'interfaccia e alcune funzionalità di Netflix.","This is a project built in Angular with the help of Bootstrap and Json Server, which replicates the interface and some functionalities of Netflix.");
+        element.innerText = currentText.replace("Questo è un grandioso progetto fatto in Angular con l'ausilio di Bootstrap e JsonServer e replica l'interfaccia e alcune funzionalità di Netflix.", "This is a project built in Angular with the help of Bootstrap and Json Server, which replicates the interface and some functionalities of Netflix.");
       } else if (currentText.includes('This is a project built in Angular with the help of Bootstrap and Json Server, which replicates the interface and some functionalities of Netflix.')) {
         element.innerText = currentText.replace('This is a project built in Angular with the help of Bootstrap and Json Server, which replicates the interface and some functionalities of Netflix.', "Questo è un grandioso progetto fatto in Angular con l'ausilio di Bootstrap e JsonServer e replica l'interfaccia e alcune funzionalità di Netflix.");
       }
 
       if (currentText.includes("leggi di più")) {
-        element.innerText = currentText.replace("leggi di più","read more");
+        element.innerText = currentText.replace("leggi di più", "read more");
       } else if (currentText.includes('read more')) {
         element.innerText = currentText.replace('read more', "leggi di più");
       }
 
       if (currentText.includes("maggio")) {
-        element.innerText = currentText.replace("maggio","may");
+        element.innerText = currentText.replace("maggio", "may");
       } else if (currentText.includes('may')) {
         element.innerText = currentText.replace('may', "maggio");
       }
 
       if (currentText.includes("Clone di Spotify")) {
-        element.innerText = currentText.replace("Clone di Spotify","Spotify Clone");
+        element.innerText = currentText.replace("Clone di Spotify", "Spotify Clone");
       } else if (currentText.includes('Spotify Clone')) {
         element.innerText = currentText.replace('Spotify Clone', "Clone di Spotify");
       }
 
       if (currentText.includes("Questo è clone di Spotify creato utilizzando HTML, CSS, Bootstrap e JavaScript. L'obiettivo è ricreare l'esperienza di Spotify in modo piacevole")) {
-        element.innerText = currentText.replace("Questo è clone di Spotify creato utilizzando HTML, CSS, Bootstrap e JavaScript. L'obiettivo è ricreare l'esperienza di Spotify in modo piacevole","This is a Spotify clone created using HTML, CSS, Bootstrap, and JavaScript. The goal is to recreate the Spotify experience in an enjoyable way");
+        element.innerText = currentText.replace("Questo è clone di Spotify creato utilizzando HTML, CSS, Bootstrap e JavaScript. L'obiettivo è ricreare l'esperienza di Spotify in modo piacevole", "This is a Spotify clone created using HTML, CSS, Bootstrap, and JavaScript. The goal is to recreate the Spotify experience in an enjoyable way");
       } else if (currentText.includes('This is a Spotify clone created using HTML, CSS, Bootstrap, and JavaScript. The goal is to recreate the Spotify experience in an enjoyable way')) {
         element.innerText = currentText.replace('This is a Spotify clone created using HTML, CSS, Bootstrap, and JavaScript. The goal is to recreate the Spotify experience in an enjoyable way', "Questo è clone di Spotify creato utilizzando HTML, CSS, Bootstrap e JavaScript. L'obiettivo è ricreare l'esperienza di Spotify in modo piacevole");
       }
 
       if (currentText.includes("ottobre")) {
-        element.innerText = currentText.replace("ottobre","october");
+        element.innerText = currentText.replace("ottobre", "october");
       } else if (currentText.includes('october')) {
         element.innerText = currentText.replace('october', "ottobre");
       }
 
       if (currentText.includes("Cibo di strada per Palermo")) {
-        element.innerText = currentText.replace("Cibo di strada per Palermo","Street Food Palermo");
+        element.innerText = currentText.replace("Cibo di strada per Palermo", "Street Food Palermo");
       } else if (currentText.includes('Street Food Palermo')) {
         element.innerText = currentText.replace('Street Food Palermo', "Cibo di strada per Palermo");
       }
 
       if (currentText.includes("Questo sito offre informazioni dettagliate sullo street food palermitano, portandoti in un viaggio culinario attraverso le strade di Palermo.")) {
-        element.innerText = currentText.replace("Questo sito offre informazioni dettagliate sullo street food palermitano, portandoti in un viaggio culinario attraverso le strade di Palermo.","This website provides detailed information about Palermo's street food, taking you on a culinary journey through the streets of Palermo.");
+        element.innerText = currentText.replace("Questo sito offre informazioni dettagliate sullo street food palermitano, portandoti in un viaggio culinario attraverso le strade di Palermo.", "This website provides detailed information about Palermo's street food, taking you on a culinary journey through the streets of Palermo.");
       } else if (currentText.includes("This website provides detailed information about Palermo's street food, taking you on a culinary journey through the streets of Palermo.")) {
         element.innerText = currentText.replace("This website provides detailed information about Palermo's street food, taking you on a culinary journey through the streets of Palermo.", "Questo sito offre informazioni dettagliate sullo street food palermitano, portandoti in un viaggio culinario attraverso le strade di Palermo.");
       }
 
       if (currentText.includes("Studenti nel Web")) {
-        element.innerText = currentText.replace("Studenti nel Web","Web Students");
+        element.innerText = currentText.replace("Studenti nel Web", "Web Students");
       } else if (currentText.includes('Web Students')) {
         element.innerText = currentText.replace('Web Students', "Studenti nel Web");
       }
 
       if (currentText.includes("Benvenuti nel progetto Web Students! Questa è una pagina statica che fornisce informazioni sugli studenti e i corsi relativi alle diverse tecnologie.")) {
-        element.innerText = currentText.replace("Benvenuti nel progetto Web Students! Questa è una pagina statica che fornisce informazioni sugli studenti e i corsi relativi alle diverse tecnologie.","Welcome to the Web Students project! This is a static page that provides information about students and courses related to various technologies.");
+        element.innerText = currentText.replace("Benvenuti nel progetto Web Students! Questa è una pagina statica che fornisce informazioni sugli studenti e i corsi relativi alle diverse tecnologie.", "Welcome to the Web Students project! This is a static page that provides information about students and courses related to various technologies.");
       } else if (currentText.includes('Welcome to the Web Students project! This is a static page that provides information about students and courses related to various technologies.')) {
         element.innerText = currentText.replace('Welcome to the Web Students project! This is a static page that provides information about students and courses related to various technologies.', "Benvenuti nel progetto Web Students! Questa è una pagina statica che fornisce informazioni sugli studenti e i corsi relativi alle diverse tecnologie.");
       }
 
       if (currentText.includes("Clone di Medium")) {
-        element.innerText = currentText.replace("Clone di Medium","Medium Clone");
+        element.innerText = currentText.replace("Clone di Medium", "Medium Clone");
       } else if (currentText.includes('Medium Clone')) {
         element.innerText = currentText.replace('Medium Clone', "Clone di Medium");
       }
 
       if (currentText.includes("Benvenuti nel progetto Medium Clone! Questo progetto è un clone semplificato del famoso sito di pubblicazione di contenuti Medium.")) {
-        element.innerText = currentText.replace("Benvenuti nel progetto Medium Clone! Questo progetto è un clone semplificato del famoso sito di pubblicazione di contenuti Medium.","Welcome to the Medium Clone project! This project is a simplified clone of the popular content publishing site Medium.");
+        element.innerText = currentText.replace("Benvenuti nel progetto Medium Clone! Questo progetto è un clone semplificato del famoso sito di pubblicazione di contenuti Medium.", "Welcome to the Medium Clone project! This project is a simplified clone of the popular content publishing site Medium.");
       } else if (currentText.includes('Welcome to the Medium Clone project! This project is a simplified clone of the popular content publishing site Medium.')) {
         element.innerText = currentText.replace('Welcome to the Medium Clone project! This project is a simplified clone of the popular content publishing site Medium.', "Benvenuti nel progetto Medium Clone! Questo progetto è un clone semplificato del famoso sito di pubblicazione di contenuti Medium.");
       }
 
       if (currentText.includes("contatti")) {
-        element.innerText = currentText.replace("contatti","contacts");
+        element.innerText = currentText.replace("contatti", "contacts");
       } else if (currentText.includes('contacts')) {
         element.innerText = currentText.replace('contacts', "contatti");
       }
 
       if (currentText.includes("Cellulare")) {
-        element.innerText = currentText.replace("Cellulare","Phone");
+        element.innerText = currentText.replace("Cellulare", "Phone");
       } else if (currentText.includes('Phone')) {
         element.innerText = currentText.replace('Phone', "Cellulare");
       }
 
       if (currentText.includes("Il tuo nome")) {
-        element.innerText = currentText.replace("Il tuo nome","Your name");
+        element.innerText = currentText.replace("Il tuo nome", "Your name");
       } else if (currentText.includes('Il tuo nome')) {
         element.innerText = currentText.replace('Il tuo nome', "Your name");
       }
 
       if (currentText.includes("La tua email")) {
-        element.innerText = currentText.replace("La tua email","Your email");
+        element.innerText = currentText.replace("La tua email", "Your email");
       } else if (currentText.includes('Your email')) {
         element.innerText = currentText.replace('Your email', "La tua email");
       }
 
       if (currentText.includes("Oggetto")) {
-        element.innerText = currentText.replace("Oggetto","Object");
+        element.innerText = currentText.replace("Oggetto", "Object");
       } else if (currentText.includes('Object')) {
         element.innerText = currentText.replace('Object', "Oggetto");
       }
 
       if (currentText.includes("Il tuo messaggio")) {
-        element.innerText = currentText.replace("Il tuo messaggio","Your message");
+        element.innerText = currentText.replace("Il tuo messaggio", "Your message");
       } else if (currentText.includes('Your message')) {
         element.innerText = currentText.replace('Your message', "Il tuo messaggio");
       }
 
       if (currentText.includes("Invia")) {
-        element.innerText = currentText.replace("Invia","Send");
+        element.innerText = currentText.replace("Invia", "Send");
       } else if (currentText.includes('Send')) {
         element.innerText = currentText.replace('Send', "Invia");
       }
@@ -451,7 +451,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   let isItalian = true;
   let typed;
 
@@ -470,7 +470,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  toggleLanguageButton.addEventListener('click', function() {
+  toggleLanguageButton.addEventListener('click', function () {
     isItalian = !isItalian;
     const strings = isItalian ? italianStrings : englishStrings;
     if (typed) {
@@ -484,4 +484,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   startTyped(italianStrings);
 });
+
+
 
