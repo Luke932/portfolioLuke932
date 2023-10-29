@@ -25,51 +25,51 @@
 
     <style>
         .contact-form {
-          flex: 1 1 42rem;
-          margin: auto;
-          flex-direction: column;
-        }
-      
-        .contact-form .box {
-          width: 100%;
-          text-transform: none;
-          color: #ccc;
-          font-size: 1.6rem;
-          border: 0.1rem solid rgba(0, 0, 0, 0.1);
-          padding: 1.5rem;
-          margin: 0.5rem 0;
-          background-color: #222;
-          outline: none;
+            flex: 1 1 42rem;
+            margin: auto;
+            flex-direction: column;
         }
 
-        .light-mode .contact-form{
+        .contact-form .box {
+            width: 100%;
+            text-transform: none;
+            color: #ccc;
+            font-size: 1.6rem;
+            border: 0.1rem solid rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin: 0.5rem 0;
+            background-color: #222;
+            outline: none;
+        }
+
+        .light-mode .contact-form {
             color: white !important;
         }
-      
+
         .contact-form .box:focus {
-          border-color: #fff;
+            border-color: #fff;
         }
-      
+
         .contact-form .box::placeholder {
-          color: #ccc;
+            color: #ccc;
         }
-      
+
         .contact-form textarea {
-          height: 15rem;
-          resize: none;
+            height: 15rem;
+            resize: none;
         }
-      
+
         .contact-form .btn {
-          margin-top: 1rem;
-          background-color: #333;
-          color: #fff;
-          border: none;
-          border-radius: 5px;
-          padding: 10px 20px;
-          cursor: pointer;
-          font-size: 16px;
+            margin-top: 1rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
         }
-      </style>
+    </style>
 
 </head>
 
@@ -90,12 +90,16 @@
         <!-- Logo -->
         <a class="logo" href="#home">
             <h2> Luca </h2>
-            <button id="toggle-mode" class="translatable" aria-label="Toggle Light Mode">Modifica Schermo</button>
-            <button id="toggle-language" class="translatable">English</button>
+
             <!-- <img src="assets/images/logo.png" alt="logo" /> -->
         </a>
+        <div class="mood">
+            <button id="toggle-mode" class="translatable" aria-label="Toggle Light Mode">Modifica Schermo</button>
+            <button id="toggle-language" class="translatable">English</button>
+        </div>
+       
         <!-- Logo End -->
-        
+
         <!-- Navbar -->
         <nav class="navbar">
             <a href="#home">home</a>
@@ -122,12 +126,13 @@
                 <div class="text">
                     <h2 class="translatable">Ciao a tutti!</h1>
                         <h1><span class="typing-text"></span></h1>
-                        <p class="translatable">"Sviluppatore web creativo con esperienza nell'offrire soluzioni web ad alto impatto per
+                        <p class="translatable">"Sviluppatore web creativo con esperienza nell'offrire soluzioni web ad
+                            alto impatto per
                             diverse organizzazioni."</p>
-                            <div class="chisono btn">
-                                <a href="#" class="translatable">chi sono</a>
-                                <i class="fas fa-user"></i>
-                            </div>
+                        <div class="chisono btn">
+                            <a href="#" class="translatable">chi sono</a>
+                            <i class="fas fa-user"></i>
+                        </div>
                 </div>
             </div>
 
@@ -155,7 +160,11 @@
             <div class="content">
 
                 <h2 class="translatable">Io sono Luca</h2>
-                <p class="translatable">Sono diplomato nel settore turistico da 11 anni, ma ho sempre avuto una grande passione per i computer e lo sviluppo web in particolare e da breve ho preso la decisione di entrare in questo campo concludendo un corso di 6 mesi presso Epicode School e devo dire che credo di aver fatto la miglior scelta della mia vita e sono pronto per fare grandi salti di qualità approfondendo ogni giorno quello che ci offre questo lavoro.</p>
+                <p class="translatable">Sono diplomato nel settore turistico da 11 anni, ma ho sempre avuto una grande
+                    passione per i computer e lo sviluppo web in particolare e da breve ho preso la decisione di entrare
+                    in questo campo concludendo un corso di 6 mesi presso Epicode School e devo dire che credo di aver
+                    fatto la miglior scelta della mia vita e sono pronto per fare grandi salti di qualità approfondendo
+                    ogni giorno quello che ci offre questo lavoro.</p>
                 <div class="about-info">
 
                     <div class="info">
@@ -175,7 +184,8 @@
                             <h4 class="translatable">Libero professionista:&nbsp;</h4>
                             <h4 class="translatable">Disponibile</h4>
                         </div>
-                        <a href="assets/pdf/Full-Stack Web Development.pdf.pdf" class="btn translatable">Scarica CV <i class="fas fa-download"></i></a>
+                        <a href="assets/pdf/Full-Stack Web Development.pdf.pdf" class="btn translatable">Scarica CV <i
+                                class="fas fa-download"></i></a>
                     </div>
 
                     <div class="counting">
@@ -273,7 +283,8 @@
                     <div class="content">
                         <span>2023</span>
                         <h3 class="translatable">Sviluppatore Full-Stack</h3>
-                        <p class="translatable">Concluso un corso intensivo di oltre 1000 ore presso Epicode, ottenendo competenze avanzate nel campo dello sviluppo web e della programmazione.</p>
+                        <p class="translatable">Concluso un corso intensivo di oltre 1000 ore presso Epicode, ottenendo
+                            competenze avanzate nel campo dello sviluppo web e della programmazione.</p>
                     </div>
                 </div>
 
@@ -282,7 +293,9 @@
                     <div class="content">
                         <span>2007 - 2012</span>
                         <h3 class="translatable">Diploma in ambito turistico</h3>
-                        <p class="translatable">Certificato come Tecnico dei Servizi Turistici dall'Istituto Alberghiero 'Virgilio Titone'. Competenze acquisite in organizzazione turistica, gestione di strutture ricettive e eventi correlati. Esperienza pratica significativa nel settore.</p>
+                        <p class="translatable">Certificato come Tecnico dei Servizi Turistici dall'Istituto Alberghiero
+                            'Virgilio Titone'. Competenze acquisite in organizzazione turistica, gestione di strutture
+                            ricettive e eventi correlati. Esperienza pratica significativa nel settore.</p>
                     </div>
                 </div>
 
@@ -297,7 +310,9 @@
                     <div class="content">
                         <span>2018 - 2023</span>
                         <h3 class="translatable">Responsabile Punto Vendita</h3>
-                        <p class="translatable">Supervisionato operazioni quotidiane e gestito vendite e personale presso il punto vendita di termoidraulica all'ingrosso di Basone Srl, contribuendo al successo e alla crescita del negozio.</p>
+                        <p class="translatable">Supervisionato operazioni quotidiane e gestito vendite e personale
+                            presso il punto vendita di termoidraulica all'ingrosso di Basone Srl, contribuendo al
+                            successo e alla crescita del negozio.</p>
                     </div>
                 </div>
 
@@ -306,7 +321,10 @@
                     <div class="content">
                         <span>2012 - 2018</span>
                         <h3 class="translatable">Ruoli nella ristorazione</h3>
-                        <p class="translatable">Con sei anni di esperienza nel settore della ristorazione, ho lavorato come cameriere e barista in diversi locali. La mia competenza nella preparazione di bevande e la mia attenzione ai dettagli hanno contribuito al successo degli esercizi in cui ho lavorato.</p>
+                        <p class="translatable">Con sei anni di esperienza nel settore della ristorazione, ho lavorato
+                            come cameriere e barista in diversi locali. La mia competenza nella preparazione di bevande
+                            e la mia attenzione ai dettagli hanno contribuito al successo degli esercizi in cui ho
+                            lavorato.</p>
                     </div>
                 </div>
 
@@ -559,15 +577,17 @@
                     </div>
                     <div class="content">
                         <div class="intro">
-                            <h5><i class="fas fa-calendar-alt"></i><span class="translatable">18 giugno, 2023</span></h5>
+                            <h5><i class="fas fa-calendar-alt"></i><span class="translatable">18 giugno, 2023</span>
+                            </h5>
                             <h5><i class="fas fa-user"></i><span class="translatable">da Luca</span></h5>
                         </div>
                         <a class="main-heading translatable" href="#">Clone di Netflix</a>
-                        <p class="translatable">Questo è un grandioso progetto fatto in Angular con l'ausilio di Bootstrap e JsonServer e replica l'interfaccia e alcune funzionalità di Netflix.
+                        <p class="translatable">Questo è un grandioso progetto fatto in Angular con l'ausilio di
+                            Bootstrap e JsonServer e replica l'interfaccia e alcune funzionalità di Netflix.
                         </p>
                         <div class="display btn netflix">
                             <a href="https://github.com/Luke932/CORSO-EPICODE/tree/main/Corso_FRONT-END/ProgettiSettimanali/Mese.N.03/ProgettoSettimanaleN.03/project"
-                            class="translatable">leggi di più</a>
+                                class="translatable">leggi di più</a>
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -579,15 +599,17 @@
                     </div>
                     <div class="content">
                         <div class="intro">
-                            <h5><i class="fas fa-calendar-alt"></i><span class="translatable">27 maggio, 2023</span></h5>
+                            <h5><i class="fas fa-calendar-alt"></i><span class="translatable">27 maggio, 2023</span>
+                            </h5>
                             <h5><i class="fas fa-user"></i><span class="translatable">da Luca</span></h5>
                         </div>
-                        <a class="main-heading translatable" href="https://luke932.github.io/Spotify-Clone/">Clone di Spotify</a>
-                        <p class="translatable">Questo è clone di Spotify creato utilizzando HTML, CSS, Bootstrap e JavaScript. L'obiettivo è ricreare l'esperienza di Spotify in modo piacevole.
+                        <a class="main-heading translatable" href="https://luke932.github.io/Spotify-Clone/">Clone di
+                            Spotify</a>
+                        <p class="translatable">Questo è clone di Spotify creato utilizzando HTML, CSS, Bootstrap e
+                            JavaScript. L'obiettivo è ricreare l'esperienza di Spotify in modo piacevole.
                         </p>
                         <div class="display btn netflix">
-                            <a href="https://github.com/Luke932/Spotify-Clone"
-                            class="translatable">leggi di più</a>
+                            <a href="https://github.com/Luke932/Spotify-Clone" class="translatable">leggi di più</a>
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -599,15 +621,16 @@
                     </div>
                     <div class="content">
                         <div class="intro">
-                            <h5><i class="fas fa-calendar-alt"></i><span class="translatable">4 ottobre, 2023</span></h5>
+                            <h5><i class="fas fa-calendar-alt"></i><span class="translatable">4 ottobre, 2023</span>
+                            </h5>
                             <h5><i class="fas fa-user"></i><span class="translatable">da Luca</span></h5>
                         </div>
                         <a class="main-heading translatable" href="#">Cibo di strada per Palermo</a>
-                        <p class="translatable">Questo sito offre informazioni dettagliate sullo street food palermitano, portandoti in un viaggio culinario attraverso le strade di Palermo.
+                        <p class="translatable">Questo sito offre informazioni dettagliate sullo street food
+                            palermitano, portandoti in un viaggio culinario attraverso le strade di Palermo.
                         </p>
                         <div class="display btn netflix">
-                            <a href="https://github.com/Luke932/Capstone-Project"
-                            class="translatable">leggi di più</a>
+                            <a href="https://github.com/Luke932/Capstone-Project" class="translatable">leggi di più</a>
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -619,15 +642,17 @@
                     </div>
                     <div class="content">
                         <div class="intro">
-                            <h5><i class="fas fa-calendar-alt"></i><span class="translatable">12 maggio, 2023</span></h5>
+                            <h5><i class="fas fa-calendar-alt"></i><span class="translatable">12 maggio, 2023</span>
+                            </h5>
                             <h5><i class="fas fa-user"></i><span class="translatable">da Luca</span></h5>
                         </div>
-                        <a class="main-heading translatable" href="https://luke932.github.io/Web-Students/">Studenti nel Web</a>
-                        <p class="translatable">Benvenuti nel progetto Web Students! Questa è una pagina statica che fornisce informazioni sugli studenti e i corsi relativi alle diverse tecnologie.
+                        <a class="main-heading translatable" href="https://luke932.github.io/Web-Students/">Studenti nel
+                            Web</a>
+                        <p class="translatable">Benvenuti nel progetto Web Students! Questa è una pagina statica che
+                            fornisce informazioni sugli studenti e i corsi relativi alle diverse tecnologie.
                         </p>
                         <div class="display btn netflix">
-                            <a href="https://github.com/Luke932/Web-Students"
-                            class="translatable">leggi di più</a>
+                            <a href="https://github.com/Luke932/Web-Students" class="translatable">leggi di più</a>
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -639,15 +664,17 @@
                     </div>
                     <div class="content">
                         <div class="intro">
-                            <h5><i class="fas fa-calendar-alt"></i><span class="translatable">12 maggio, 2023</span></h5>
+                            <h5><i class="fas fa-calendar-alt"></i><span class="translatable">12 maggio, 2023</span>
+                            </h5>
                             <h5><i class="fas fa-user"></i><span class="translatable">da Luca</span></h5>
                         </div>
-                        <a class="main-heading translatable" href="https://luke932.github.io/Clone-di-Medium/">Clone di Medium</a>
-                        <p class="translatable">Benvenuti nel grande progetto Medium Clone! Questo progetto è un clone semplificato del famoso sito di pubblicazione di contenuti Medium.
+                        <a class="main-heading translatable" href="https://luke932.github.io/Clone-di-Medium/">Clone di
+                            Medium</a>
+                        <p class="translatable">Benvenuti nel grande progetto Medium Clone! Questo progetto è un clone
+                            semplificato del famoso sito di pubblicazione di contenuti Medium.
                         </p>
                         <div class="display btn netflix">
-                            <a href="https://github.com/Luke932/Clone-di-Medium"
-                            class="translatable">leggi di più</a>
+                            <a href="https://github.com/Luke932/Clone-di-Medium" class="translatable">leggi di più</a>
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -723,18 +750,18 @@
             <form class="contact-form" action="https://formspree.io/f/mnqkwwnb" method="POST">
                 <label class="translatable" for="nome">Il tuo nome:</label>
                 <input class="box" type="text" name="nome" id="nome">
-              
+
                 <label for="email" class="translatable">La tua email:</label>
                 <input class="box" type="email" name="email" id="email">
-              
+
                 <label for="oggetto" class="translatable">Oggetto:</label>
                 <input class="box" type="text" name="oggetto" id="oggetto">
-              
+
                 <label for="messaggio" class="translatable">Il tuo messaggio:</label>
                 <textarea class="box" name="messaggio" id="messaggio"></textarea>
-              
+
                 <button class="btn translatable" type="submit">Invia</button>
-              </form>
+            </form>
         </div>
 
     </section>
@@ -780,7 +807,7 @@
 
     <!-- Typed Script -->
     <script>
-     
+
     </script>
 
     <!-- Contact-Form Script -->

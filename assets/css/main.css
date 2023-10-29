@@ -312,6 +312,14 @@ header #menu-btn:hover{
     min-height: 100vh;
 }
 
+.mood button{
+    padding: 1.5rem;
+    cursor: pointer;
+    background-color: var(--purple);
+    color: var(--white);
+    margin-right: 0.5rem;;
+}
+
 .home .box-container{
     min-height: 100vh;
     display: -webkit-box;
